@@ -1,0 +1,25 @@
+.hero {
+    background-color: #e5e5e5;
+    padding: 40% 5% 0% 5%;
+}
+
+.hero-text1 {
+    font-size: xx-large;
+}
+
+.hero-image {
+    margin-top: 10%;
+}
+
+.hero-image img {
+    mix-blend-mode: multiply;
+    width: 100%;
+}
+
+/* Style tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero {
+        background-color: #e5e5e5;
+        padding: 20% 5% 0% 5%;
+    }
+}

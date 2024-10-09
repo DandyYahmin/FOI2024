@@ -1,0 +1,16 @@
+.about {
+    background-color: #ff6501;
+    padding: 10%;
+}
+
+.about .heading {
+    font-size: x-large;
+    color: white;
+    margin: 2%;
+    text-align: center;
+}
+
+.about .paragraph {
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,53 @@
+.topbar {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    z-index: 10;
+}
+
+.welcome-sign {
+    background-color: #ff6501;
+    text-align: center;
+    color: white;
+    padding: 1%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: white;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-icons i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icons-color {
+    color: #ff6501;
+}
