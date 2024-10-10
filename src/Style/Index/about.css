@@ -1,5 +1,5 @@
 .about {
-    background-color: #ff6501;
+    background-color: #cc5101;
     padding: 10%;
 }
 
@@ -13,4 +13,12 @@
 .about .paragraph {
     color: white;
     text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .about .paragraph {
+        padding: 0 20%;
+        color: white;
+        text-align: center;
+    }
 }

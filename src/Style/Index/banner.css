@@ -1,0 +1,15 @@
+.banner {
+    width: 100vw;
+    aspect-ratio: 1;
+    background-image: url('../../../Assets/Images/Banner/banner(1).webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@media (min-width: 1024px) {
+    .banner {
+        aspect-ratio: 6;
+        background-size: auto;
+    }
+}

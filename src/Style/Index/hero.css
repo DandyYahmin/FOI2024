@@ -1,6 +1,5 @@
 .hero {
-    background-color: #e5e5e5;
-    padding: 40% 5% 0% 5%;
+    padding: 40% 5% 25% 5%;
 }
 
 .hero-text1 {
@@ -19,7 +18,19 @@
 /* Style tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
     .hero {
-        background-color: #e5e5e5;
-        padding: 20% 5% 0% 5%;
+        padding: 20% 5% 10% 5%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        padding: 10% 10% 10% 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero-text1 {
+        font-size: 400%;
     }
 }

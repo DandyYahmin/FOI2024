@@ -10,6 +10,10 @@
     color: #cc5101;
 }
 
+.primary800 {
+    color: #662800;
+}
+
 .neutral400 {
     color: #a3a3a3;
 }
@@ -20,4 +24,8 @@
 
 .neutral200 {
     color: #e5e5e5;
+}
+
+.neutral100 {
+    color: #fafafa;
 }
