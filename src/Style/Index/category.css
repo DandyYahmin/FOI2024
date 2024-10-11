@@ -17,6 +17,7 @@
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .category .card:hover {

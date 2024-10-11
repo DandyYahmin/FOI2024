@@ -12,3 +12,9 @@
     margin: 2%;
     text-align: center;
 }
+
+@media (min-width: 1024px) {
+    .location {
+        padding: 0% 20% 10% 20%;
+    }
+}

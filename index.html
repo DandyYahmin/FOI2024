@@ -19,25 +19,35 @@
     <link rel="stylesheet" href="./src/Style/Index/footer.css">
     <title>Superego</title>
 </head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
 <body style="margin: 0; padding: 0; overflow-x: hidden;">
     <nav class="topbar">
         <div class="welcome-sign roboto-light-italic">Welcome to the best outfit shop in the town</div>
         <div class="navbar">
             <div class="nav-left">
-                <div class="hamburger">
-                    <i class="fas fa-bars icons-color"></i>
-                </div>
                 <img src="./Assets/Images/logo.svg" alt="logo" width="50">
-                <div class="logo roboto-medium primary500">SUPEREGO</div>
+                <div class="logo"><a href="index.html" class="roboto-medium primary500">SUPEREGO</a></div>
             </div>
-        
-            <div class="nav-icons">
-                <i class="fas fa-search icons-color"></i>
-                <i class="fas fa-shopping-cart icons-color"></i>
+            <div class="hamburger">
+                <i class="fas fa-bars icons-color"></i>
+                <i class="fa-solid fa-x icons-color"></i>
+            </div>
+            <div class="dropdown-menu roboto-regular">
+                <a href="index.html#hero">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#category">Category</a>
+                <a href="product.html">Product</a>
+                <a href="index.html#commentar">Reviews</a>
+                <a href="index.html#location">Location</a>
+                <a href="#footer">Contact</a>
             </div>
         </div>
     </nav>
-    <div class="hero">
+    <div class="hero" id="hero">
         <div>
             <div class="roboto-black hero-text1 primary500">BY YOUR EGO</div>
             <div class="roboto-light">a proudly local denim brand from Jakarta,<br>
@@ -49,46 +59,41 @@
             <img src="./Assets/Images/Product/product(6).png" alt="hero">
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <div class="roboto-black heading">ABOUT US</div>
         <div class="roboto-regular paragraph">Superego.co is a proudly local denim brand from Jakarta, renowned for its collection of high-quality trousers. While our foundation lies in crafting premium denim trousers, we offer much more. Superego presents a diverse selection of stylish and comfortable chinos, designed to complement your everyday style. Beyond trousers, we have expanded our collection to include a wide range of apparel and accessories. From shirts and jackets to hoodies and hats, each piece is carefully crafted with a focus on both quality and contemporary design. Whether you're dressing for comfort or style, Superego ensures that you always look your best, no matter the occasion.</div>
     </div>
-    <div class="location">
-        <div class="roboto-black heading primary500">LOCATION</div>
-        <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.638561475042!2d106.746353!3d-6.2426813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f54b44f83069%3A0x51ee31c298235658!2sSUPEREGO.CO!5e0!3m2!1sen!2sid!4v1728486492126!5m2!1sen!2sid" 
-        width="100%" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade"
-        align="center"></iframe>
-        <div class="roboto-light paragraph">Gedung Hall Kreo, Jl. H. Adam Malik, Kreo Selatan, Kec. Larangan, Kota Tangerang, Banten 15156</div>
-    </div>
-    <div class="banner"></div>
-    <div class="category">
+    <div class="category" id="category">
         <div class="roboto-black heading primary500">CATEGORY</div>
         <div class="product-grid roboto-regular">
-            <div class="card">
-                <div class="product-photo"><img src="./Assets/Images/Product/product(7).jpg" alt="pants" /></div>
-                <div class="product-name">pants</div>
-            </div>
-            <div class="card">
-                <div class="product-photo"><img src="./Assets/Images/Product/product(10).jpg" alt="shirt" /></div>
-                <div class="product-name">shirt</div>
-            </div>
-            <div class="card">
-                <div class="product-photo"><img src="./Assets/Images/Product/product(12).jpg" alt="jacket" /></div>
-                <div class="product-name">outer</div>
-            </div>
-            <div class="card">
-                <div class="product-photo"><img src="./Assets/Images/Product/product(11).jpg" alt="hat" /></div>
-                <div class="product-name">hat</div>
-            </div>
+            <a href="product.html#pants" style="text-decoration: none; color: black;">
+                <div class="card">
+                    <div class="product-photo"><img src="./Assets/Images/Product/product(7).jpg" alt="pants" /></div>
+                    <div class="product-name">pants</div>
+                </div>
+            </a>
+            <a href="product.html#shirt" style="text-decoration: none; color: black;">
+                <div class="card">
+                    <div class="product-photo"><img src="./Assets/Images/Product/product(10).jpg" alt="shirt" /></div>
+                    <div class="product-name">shirt</div>
+                </div>
+            </a>
+            <a href="product.html#outer" style="text-decoration: none; color: black;">
+                <div class="card">
+                    <div class="product-photo"><img src="./Assets/Images/Product/product(12).webp" alt="outer" /></div>
+                    <div class="product-name">outer</div>
+                </div>
+            </a>
+            <a href="product.html#hat" style="text-decoration: none; color: black;">
+                <div class="card">
+                    <div class="product-photo"><img src="./Assets/Images/Product/product(11).jpg" alt="hat" /></div>
+                    <div class="product-name">hat</div>
+                </div>
+            </a>
         </div>
     </div>
-    <div class="commentar">
+    <div class="banner"></div>
+    <div class="commentar" id="commentar">
         <div class="roboto-black heading primary500">REVIEWS</div>
         <div class="commentars roboto-regular">
             <ul>
@@ -171,17 +176,30 @@
             </ul>
         </div>
     </div>
-    <div class="footer">
+    <div class="location" id="location">
+        <div class="roboto-black heading primary500">LOCATION</div>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.638561475042!2d106.746353!3d-6.2426813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f54b44f83069%3A0x51ee31c298235658!2sSUPEREGO.CO!5e0!3m2!1sen!2sid!4v1728486492126!5m2!1sen!2sid" 
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        align="center"></iframe>
+        <div class="roboto-light paragraph">Gedung Hall Kreo, Jl. H. Adam Malik, Kreo Selatan, Kec. Larangan, Kota Tangerang, Banten 15156</div>
+    </div>
+    <div class="footer" id="footer">
         <div class="head">
             <div class="logo roboto-black">SUPEREGO_CO</div>
             <div class="social-media">
-                <a href="https://www.instagram.com/superego_co/">
+                <a target="_blank" href="https://www.instagram.com/superego_co/">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://www.tiktok.com/@superego.co">
+                <a target="_blank" href="https://www.tiktok.com/@superego.co">
                     <i class="fab fa-tiktok"></i>
                 </a>
-                <a href="https://www.youtube.com/channel/UCDM-8nMhrfrFIlouRO_P5fQ">
+                <a target="_blank" href="https://www.youtube.com/channel/UCDM-8nMhrfrFIlouRO_P5fQ">
                     <i class="fab fa-youtube"></i>
                 </a>
             </div>
@@ -196,5 +214,6 @@
         </div>
         <div class="divider"></div>
     </div>
+    <script src="./src/Style/Index/navbar.js"></script>
 </body> 
 </html>
