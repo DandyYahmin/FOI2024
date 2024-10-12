@@ -50,6 +50,23 @@
     margin-top: 2%;
 }
 
+.check-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 1%;
+    text-decoration: none;
+}
+
+.check-button:hover {
+    background-color: #333;
+}
+
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .divider-etalase {
         padding-top: 20%;

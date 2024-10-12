@@ -1,0 +1,133 @@
+.divider-etalase {
+    padding-top: 30%;
+}
+
+.etalase {
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: fit-content;
+    min-width: 50%;
+    padding: 10px;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.product-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+}
+
+.product-photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #d4d4d4;
+    margin: 5% 0% 1% 0%;
+}
+
+.product-name {
+    white-space: normal;
+    overflow-x: hidden;
+    display: block;
+    max-width: 100%;
+    margin-top: 2%;
+}
+
+.product-size {
+    width: 100%;
+}
+
+.product-size button {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #d4d4d4;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin: 1% 2% 3% 0%;
+}
+
+.product-size button:hover {
+    background-color: #ff6501;
+    color: white;
+}
+
+.product-size button.clicked {
+    border: 2px solid #ff6501;
+}
+
+.custom-button {
+    background-color: #ff6501;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.custom-button:active {
+    border: 5px solid #ff6501;
+}
+
+.quantity-btn {
+    background-color: #ff6501;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.quantity-btn:hover {
+    background-color: #e55a01;
+}
+
+#quantity {
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .product-size button {
+        width: 10%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .divider-etalase {
+        padding-top: 20%;
+    }
+
+    .product-photo img {
+        border: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .divider-etalase {
+        padding: 0%;
+    }
+
+    .product-photo img {
+        width: 75%;
+        border: none;
+    }
+
+    .card {
+        max-width: 0.01px;
+    }
+}
