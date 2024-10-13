@@ -149,6 +149,7 @@ const params = new URLSearchParams(window.location.search);
 const id = params.get('id');
 const product = findProductByName(id);
 if(product !== null) {
+    document.getElementById('back').setAttribute('href','product.html#'+product.category);
     document.getElementById('image').src = product.image;
     document.getElementById('name').innerHTML += product.name;
     document.getElementById('priced').innerHTML += product.price.toLocaleString('id-ID').replace(/,/g, '.');
