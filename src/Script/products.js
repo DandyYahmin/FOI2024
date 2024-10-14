@@ -148,14 +148,19 @@ function findProductByName(id) {
 const params = new URLSearchParams(window.location.search);
 const id = params.get('id');
 const product = findProductByName(id);
-if(product !== null) {
+if(product !== null && id !== null) {
     document.getElementById('back').setAttribute('href','product.html#'+product.category);
     document.getElementById('image').src = product.image;
     document.getElementById('name').innerHTML += product.name;
     document.getElementById('priced').innerHTML += product.price.toLocaleString('id-ID').replace(/,/g, '.');
     document.getElementById('description').innerHTML += product.description;
 }else {
-
+    const product = findProductByName('CPS06B');
+    document.getElementById('back').setAttribute('href','product.html#'+product.category);
+    document.getElementById('image').src = product.image;
+    document.getElementById('name').innerHTML += product.name;
+    document.getElementById('priced').innerHTML += product.price.toLocaleString('id-ID').replace(/,/g, '.');
+    document.getElementById('description').innerHTML += product.description;
 }
 
 let quantity = 1;
