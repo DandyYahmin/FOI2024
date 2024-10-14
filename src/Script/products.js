@@ -155,12 +155,7 @@ if(product !== null && id !== null) {
     document.getElementById('priced').innerHTML += product.price.toLocaleString('id-ID').replace(/,/g, '.');
     document.getElementById('description').innerHTML += product.description;
 }else {
-    const product = findProductByName('CPS06B');
-    document.getElementById('back').setAttribute('href','product.html#'+product.category);
-    document.getElementById('image').src = product.image;
-    document.getElementById('name').innerHTML += product.name;
-    document.getElementById('priced').innerHTML += product.price.toLocaleString('id-ID').replace(/,/g, '.');
-    document.getElementById('description').innerHTML += product.description;
+    window.location.href = 'detail-product.html?id=OVA01A';
 }
 
 let quantity = 1;
