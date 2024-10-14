@@ -155,7 +155,8 @@ if(product !== null && id !== null) {
     document.getElementById('priced').innerHTML += product.price.toLocaleString('id-ID').replace(/,/g, '.');
     document.getElementById('description').innerHTML += product.description;
 }else {
-    window.location.href = 'detail-product.html?id=OVA01A';
+    const randomIndex = Math.floor(Math.random() * products.length);
+    window.location.href = `detail-product.html?id=${products[randomIndex].id}`;
 }
 
 let quantity = 1;
